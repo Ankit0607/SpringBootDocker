@@ -24,7 +24,7 @@ public class SpringBootDockerApplication {
 		logger.info("Application Satrted...");
 	}
 	public static void main(String[] args) {
-		logger.info("Application executed...");
+		logger.info("Application executed... and its ok");
 		SpringApplication.run(SpringBootDockerApplication.class, args);
 		
 		
