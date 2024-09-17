@@ -14,7 +14,7 @@ class SpringBootDockerApplicationTests {
 
 	@Test
 	void contextLoads() {
-		logger.info("test executed...");
+		logger.info("test executed....");
 		assertEquals(true, true);
 	}
 
