@@ -17,7 +17,7 @@ public class SpringBootDockerApplication {
 //	public String getmessage() {
 //		return "Helloo Docker !!";
 //	}
-	public static Logger logger = (Logger) LoggerFactory.getLogger(SpringBootDockerApplication.class);
+	public static org.slf4j.Logger logger =  LoggerFactory.getLogger(SpringBootDockerApplication.class);
 
 	@PostConstruct
 	public void intt() {
