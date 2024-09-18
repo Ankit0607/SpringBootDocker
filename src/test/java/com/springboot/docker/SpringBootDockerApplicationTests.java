@@ -13,7 +13,7 @@ class SpringBootDockerApplicationTests {
 	public static Logger logger = (Logger) LoggerFactory.getLogger(SpringBootDockerApplication.class);
 
 	@Test
-	void contextLoads() {
+	 contextLoads() {
 		logger.info("test executed....");
 		assertEquals(true, true);
 	}
