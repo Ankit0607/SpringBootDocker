@@ -22,6 +22,7 @@ public class SpringBootDockerApplication {
 	@PostConstruct
 	public void intt() {
 		logger.info("Application Satrted...");
+		logger.info("Checking build pipeline Satrted...");
 	}
 	public static void main(String[] args) {
 		logger.info("Application executed... and its ok");
