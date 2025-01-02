@@ -1,0 +1,34 @@
+replicaCount: 1
+
+image:
+  repository: Ankitdocker0607/spring-boot-docker
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  host: spring-boot-docker.example.com
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+config:
+  database_url: jdbc:mysql://mysql-service:3306/mydb
+  database_username: dbuser
+  database_password: dbpassword
+
+secrets:
+  dbUsername: dbuser
+  dbPassword: dbpassword
+
+pvc:
+  storageClassName: standard
+  size: 1Gi
